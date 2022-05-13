@@ -62,7 +62,8 @@ def add_transaction(request):
         sender, receiver, transaction_amt
     )
     if not success:
-        context = {"success": success, "message": "You have low balance"}
+        msg = "Bearer has low balance"
+        context = {"success": success, "message": msg}
         return Response(context, status=status.HTTP_400_BAD_REQUEST)
 
     balance = (
