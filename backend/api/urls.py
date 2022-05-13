@@ -9,7 +9,7 @@ urlpatterns = [
     path('add_transaction', views.add_transaction, name="add_transaction"),
     path('get_transactions', views.get_transactions, name="get_transactions"),
     path('mark_paid', views.mark_paid, name="mark_paid"),
-    # path('mark_paid', views.mark_paid, name="get_user_accounts"),
+    path('get_statistics', views.get_statistics, name="get_statistics"),
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

@@ -51,3 +51,5 @@ class TransactionSerializer(serializers.Serializer):
     transaction_from = AccountSerializer(context={"fields": ["id", "user"]})
     transaction_to = AccountSerializer(context={"fields": ["id", "user"]})
     amount = serializers.IntegerField()
+    created_on = serializers.DateTimeField()
+    updated_on = serializers.DateTimeField()
