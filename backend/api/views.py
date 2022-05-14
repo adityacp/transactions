@@ -65,14 +65,14 @@ def add_transaction(request):
         msg = "Bearer has low balance"
         context = {"success": success, "message": msg}
         return Response(context, status=status.HTTP_400_BAD_REQUEST)
-
-    balance = (
-        sender.balance if sender.user_id == user.id else receiver.balance
+    account = sender if sender.user_id == user.id else receiver
+    Transaction.objects.create(**data)
+    transactions = Transaction.objects.filter(
+        Q(transaction_from=account.id) | Q(transaction_to=account.id)
     )
-    transaction = Transaction.objects.create(**data)
     context = {
-        "transaction": TransactionSerializer(transaction).data,
-        "success": True, "balance": balance
+        "transactions": TransactionSerializer(transactions, many=True).data,
+        "success": True, "balance": account.balance
     }
     status_code = status.HTTP_201_CREATED
     return Response(context, status=status_code)
