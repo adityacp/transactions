@@ -3,3 +3,4 @@ django-cors-headers==3.12.0
 djangorestframework==3.13.1
 pandas
 python-decouple
+mysqlclient
