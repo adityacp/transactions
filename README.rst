@@ -7,6 +7,7 @@ This repository contains the backend and frontend code for maintaining transacti
 Deployment Link: - 
 
 Admin: - http://backend-env.eba-ppi2dpjv.us-west-2.elasticbeanstalk.com/admin/
+
 API: - http://backend-env.eba-ppi2dpjv.us-west-2.elasticbeanstalk.com/api
 
 Sample postman API Link: - https://documenter.getpostman.com/view/2450865/UyxjF5qM
