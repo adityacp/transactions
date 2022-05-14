@@ -9,6 +9,21 @@ Sample postman API Link: - https://documenter.getpostman.com/view/2450865/UyxjF5
 Deployment Link: - http://backend-env.eba-ppi2dpjv.us-west-2.elasticbeanstalk.com/admin/
 
 
+Enhancements:-
+^^^^^^^^^^^^
+
+1. Frontend and Backend repository should be separately maintained.
+
+2. Need of more validations while accepting data via API.
+
+3. Add tests for few more APIs.
+
+4. Frontend is partially implemented and does not have the UI to mark transactions as paid.
+
+5. No tests added for Vue frontend
+
+6. Minimal UI is implemented and missing the line chart for showing data over time on the UI.
+
 Requirements
 ^^^^^^^^^^^^
 
