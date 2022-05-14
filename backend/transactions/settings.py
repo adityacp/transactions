@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 from decouple import config
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -89,13 +90,12 @@ if DEBUG:
 else:
     DATABASES = {
         'default': {
-            'ENGINE': config('DB_ENGINE'),
-            'NAME': config('DB_DATABASE'),
-            'HOST': config('DB_HOST'),
-            'PORT': config('DB_PORT'),
-            'USER': config('DB_USER'),
-            'PASSWORD': config('DB_PASSWORD'),
-            'OPTIONS': {'ssl': {'ca': config('MYSQL_ATTR_SSL_CA')}}
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': os.environ['RDS_DB_NAME'],
+            'USER': os.environ['RDS_USERNAME'],
+            'PASSWORD': os.environ['RDS_PASSWORD'],
+            'HOST': os.environ['RDS_HOSTNAME'],
+            'PORT': os.environ['RDS_PORT'],
         }
     }
 
