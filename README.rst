@@ -4,9 +4,13 @@ Transactions Application
 
 This repository contains the backend and frontend code for maintaining transactions of a user
 
-Sample postman API Link: - https://documenter.getpostman.com/view/2450865/UyxjF5qM
+Deployment Link: - 
 
-Deployment Link: - http://backend-env.eba-ppi2dpjv.us-west-2.elasticbeanstalk.com/admin/
+Admin: - http://backend-env.eba-ppi2dpjv.us-west-2.elasticbeanstalk.com/admin/
+
+API: - http://backend-env.eba-ppi2dpjv.us-west-2.elasticbeanstalk.com/api
+
+Sample postman API Link: - https://documenter.getpostman.com/view/2450865/UyxjF5qM
 
 
 Enhancements:-
