@@ -6,11 +6,24 @@ This repository contains the backend and frontend code for maintaining transacti
 
 Deployment Link: - 
 
-Admin: - http://backend-env.eba-ppi2dpjv.us-west-2.elasticbeanstalk.com/admin/
+Admin: - https://backend.transaction-app.live/admin/
 
-API: - http://backend-env.eba-ppi2dpjv.us-west-2.elasticbeanstalk.com/api
+API: - https://backend.transaction-app.live/api
+
+Frontend URL :- https://transactions-task.netlify.app
 
 Sample postman API Link: - https://documenter.getpostman.com/view/2450865/UyxjF5qM
+
+
+Test Users:
+
+User 1 Credentials
+Username: - test_user1
+Password: - test_user1
+
+User 2 Credentials
+Username: - test_user2
+Password: - test_user2
 
 
 Enhancements:-
