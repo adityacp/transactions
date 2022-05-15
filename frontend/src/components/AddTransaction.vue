@@ -88,7 +88,6 @@ export default {
   mounted() {
     let accountData = this.getAccounts.accounts;
     this.currentUser = parseInt(sessionStorage.getItem("user_id"))
-    console.log(this.currentUser)
     for(let i=0; i< accountData.length; i++) {
       this.accounts.push({
         "id": accountData[i].id,
